@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.search-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* 垂直居中對齊 label, input, button */
+    gap: 10px; /* 元素之間的間隔 */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 200px; /* 輸入框最小寬度 */
+}
+
+#searchButton {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    text-align: center;
+    min-height: 300px; /* 確保有空間顯示圖片或訊息 */
+    width: 80%;
+    max-width: 600px; /* 限制最大寬度 */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#messageArea {
+    color: #555;
+    font-style: italic;
+}
+
+#resultImage {
+    max-width: 100%; /* 圖片寬度不超過容器 */
+    height: auto;    /* 高度自動調整 */
+    margin-top: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#imageInfo {
+    font-size: 0.8em;
+    color: grey;
+    margin-top: 5px;
+}

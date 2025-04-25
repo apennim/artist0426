@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隨機藝術圖片搜尋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>隨機藝術圖片搜尋</h1>
+
+    <div class="search-container">
+        <label for="searchInput">輸入畫家或畫風：</label>
+        <input type="text" id="searchInput" placeholder="例如：梵谷、印象派...">
+        <button id="searchButton">隨機顯示圖片</button>
+    </div>
+
+    <div id="resultContainer">
+        <p id="messageArea">請輸入關鍵字並點擊按鈕。</p>
+        <img id="resultImage" src="" alt="搜尋結果圖片" style="display: none;">
+         <p id="imageInfo" style="font-size: 0.8em; color: grey; margin-top: 5px;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
